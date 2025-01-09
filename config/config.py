@@ -9,9 +9,9 @@ load_dotenv()
 
 API_ID = int(getenv("API_ID", "20594535"))
 API_HASH = getenv("API_HASH", "40d94b8c167104937b2846efa895bef7")
-BOT_TOKEN = getenv("BOT_TOKEN", "5607218250:AAF5V7dFoSUFof0fjjNQ3PayQvcKXBlI0E0")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://2004:2004@cluster0.vugmi1n.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001899951693"))
+BOT_TOKEN = getenv("BOT_TOKEN", "5624068661:AAEXObnqRAujlX74hsjZWR2xXhx11Syh2ZM")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://EXONTESTMONGO:EXONTESTMONGO@cluster0.bviw7ic.mongodb.net/?retryWrites=true&w=majority")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002488687891"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "『sona ✘ ℳ𝓾𝓼𝓲c͢˼』")
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "1548904516").split()))
@@ -74,7 +74,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 
 
-STRING1 = getenv("STRING_SESSION", "BQC2FziXGPW_u1HXZTeGWnkHO3qP9W1qg9qZ7sF5YVpjrJRm8PWDRWv7mlDKsrYT08JxeRMEwzkDBsNaiMI5bW291qylE8XuBtCqeoH4QlIAl4PKtGuzMMFfBh3-fkrrZGuDcbt7pjl3HBqDpMu7hAYMtvKzIS4g4lriuxmxrzMZ1qv_ZN-ThsDWCqBZ9ARddIJUvcQXQbAXSruu_MVyJUqgAKPJRF3DJKNlWArgCuLB36NK0AaJ1ET5KwFobBsRJUK1jfuTyaaDINIap2htKT7otziDzk3SyWnvxitM09cTsZlcXlSqZ_VxwCiPLWupbYXo3jfgqRiJHa3cYzxqsNqCAAAAAVuuWxIA")
+STRING1 = getenv("STRING_SESSION", "BQFd1ZoABI7htcsZ22dLCbd7BFglPFCyT5JAbF9nxGwkV-DR3hs_sOe1QOGAtGfEaPY0BMitePR1RnW2b2_uzWFGteR15iHtz4gQoFEHKmg99tidegZ_0lQ8u9iW-sePaB-2LQ1eLMo4smN0GYPvx7Y4i03T1xbiQ_UfMbULHbWTl7eXi65l1uY2voYFLL9B64c8aZQein7vVIQqjF3IysjFLLiVzvc4G4Fde0Ja0zT5Q_RTn-X5MUdB0i_YVwFh79ZCWvRNYZBIO1kIgEsVF9qZ4vRABwaZK8eT7NDhApHXUbfWIis3e05pgiw5xd9Huqyp7LsuK1O43N68y9o8dDRmK42iQwAAAAHS5JCGAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
