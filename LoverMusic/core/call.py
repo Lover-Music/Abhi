@@ -34,7 +34,6 @@ from LoverMusic.utils.database import (
     set_loop,
 )
 from LoverMusic.utils.exceptions import AssistantErr
-from LoverMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
 from LoverMusic.utils.inline.play import stream_markup
 from LoverMusic.utils.stream.autoclear import auto_clean
 from LoverMusic.utils.thumbnails import get_thumb
