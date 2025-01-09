@@ -1,7 +1,13 @@
+import uvloop
+
+uvloop.install()
+
 import sys
 
-from pyrogram import Client
+from pyrogram import Client, errors
 from pyrogram.types import BotCommand
+from pyrogram.enums import ChatMemberStatus, ParseMode
+
 
 import config
 
@@ -12,11 +18,13 @@ class LoverMusic (Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot...")
         super().__init__(
-            "NottyyMusic",
+            "LoverMusic",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
-        )
+            in_memory=True,
+            parse_mode=ParseMode.HTML,
+            max_concurrent_transmissions=7,)
 
     async def start(self):
         await super().start()
@@ -28,7 +36,7 @@ class LoverMusic (Client):
         else:
             self.name = get_me.first_name
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
-        if a.status != "administrator":
+        if a.status != ChatMemberStatus.administrator:
             LOGGER(__name__).error(
                 "Please promote Bot as Admin in Logger Group"
             )
