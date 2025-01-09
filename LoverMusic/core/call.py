@@ -36,7 +36,7 @@ from LoverMusic.utils.database import (
 from LoverMusic.utils.exceptions import AssistantErr
 from LoverMusic.utils.inline.play import stream_markup
 from LoverMusic.utils.stream.autoclear import auto_clean
-from LoverMusic.utils.thumbnails 
+from LoverMusic.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
