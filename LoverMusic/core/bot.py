@@ -2,15 +2,12 @@ import uvloop
 
 uvloop.install()
 
-import sys
-
 from pyrogram import Client, errors
-from pyrogram.enums import ChatMemberStatus
-
+from pyrogram.enums import ChatMemberStatus, ParseMode
 
 import config
-
 from ..logging import LOGGER
+
 
 class LoverMusic(Client):
     def __init__(self):
