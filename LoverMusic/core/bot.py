@@ -1,11 +1,8 @@
-import uvloop
-
-uvloop.install()
-
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
 import config
+
 from ..logging import LOGGER
 
 
@@ -31,7 +28,7 @@ class LoverMusic(Client):
 
         try:
             await self.send_message(
-                chat_id=config.LOG_GROUP_ID,
+                chat_id=config.LOGGER_ID,
                 text=f"<u><b>» {self.mention} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :</b><u>\n\nɪᴅ : <code>{self.id}</code>\nɴᴀᴍᴇ : {self.name}\nᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
@@ -45,7 +42,7 @@ class LoverMusic(Client):
             )
             exit()
 
-        a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
+        a = await self.get_chat_member(config.LOGGER_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
             LOGGER(__name__).error(
                 "Please promote your bot as an admin in your log group/channel."
