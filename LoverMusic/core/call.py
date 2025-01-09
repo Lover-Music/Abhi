@@ -19,9 +19,9 @@ from pytgcalls.types import MediaStream,ChatUpdate
 
 import config
 from config import autoclean
-from AviaxMusic import LOGGER, YouTube, app
-from AviaxMusic.misc import db
-from AviaxMusic.utils.database import (
+from LoverMusic import LOGGER, YouTube, app
+from LoverMusic.misc import db
+from LoverMusic.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -33,10 +33,10 @@ from AviaxMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from AviaxMusic.utils.exceptions import AssistantErr
-from AviaxMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from AviaxMusic.utils.inline.play import stream_markup
-from AviaxMusic.utils.thumbnails import gen_thumb
+from LoverMusic.utils.exceptions import AssistantErr
+from LoverMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
+from LoverMusic.utils.inline.play import stream_markup
+from LoverMusic.utils.thumbnails import gen_thumb
 from strings import get_string
 
 autoend = {}
@@ -52,7 +52,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="AviaxAss1",
+            name="LoverMusicAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -62,7 +62,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="AviaxAss2",
+            name="LoverMusicAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -72,7 +72,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="AviaxAss3",
+            name="LoverMusicAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -82,7 +82,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="AviaxAss4",
+            name="LoverMusicAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -92,7 +92,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="AviaxAss5",
+            name="LoverMusicAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -628,4 +628,4 @@ class Call(PyTgCalls):
             await self.change_stream(client, update.chat_id)
 
 
-Aviax = Call()
+LoverMusic = Call()
