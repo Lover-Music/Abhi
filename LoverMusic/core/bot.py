@@ -5,7 +5,7 @@ uvloop.install()
 import sys
 
 from pyrogram import Client, errors
-from pyrogram.enums import ChatMemberStatus, ParseMode
+from pyrogram.enums import ChatMemberStatus
 
 
 import config
