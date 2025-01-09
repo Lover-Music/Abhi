@@ -10,8 +10,8 @@ from youtubesearchpython.__future__ import VideosSearch
 
 
 import config
-from AviaxMusic.utils.database import is_on_off
-from AviaxMusic.utils.formatters import time_to_seconds
+from LoverMusic.utils.database import is_on_off
+from LoverMusic.utils.formatters import time_to_seconds
 
 
 
