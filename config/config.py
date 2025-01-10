@@ -11,8 +11,8 @@ API_ID = int(getenv("API_ID", "20594535"))
 API_HASH = getenv("API_HASH", "40d94b8c167104937b2846efa895bef7")
 BOT_TOKEN = getenv("BOT_TOKEN", "5624068661:AAFXFPb2Q3tzYIHkmj96zcxyCCpjuN4X9RA")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://EXONTESTMONGO:EXONTESTMONGO@cluster0.bviw7ic.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002488687891"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "『sona ✘ ℳ𝓾𝓼𝓲c͢˼』")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002462242043"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "sona ✘ ℳ𝓾𝓼𝓲c͢˼』")
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "1548904516").split()))
 SUPPORT_CHANNEL = getenv(
@@ -34,7 +34,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/SPARTENX-OP/VirusMusicBot",
+    "https://github.com/Lover-Music/Abhi",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
