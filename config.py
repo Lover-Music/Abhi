@@ -80,7 +80,7 @@ STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-
+BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
 chatstats = {}
