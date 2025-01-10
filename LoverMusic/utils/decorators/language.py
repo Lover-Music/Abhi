@@ -2,7 +2,6 @@ from strings import get_string
 
 from LoverMusic import app
 from LoverMusic.misc import SUDOERS
-from config import SUPPORT_CHAT
 from LoverMusic.utils.database import get_lang, is_maintenance
 
 
